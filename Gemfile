@@ -1,6 +1,6 @@
 # A sample Gemfile
 source "https://rubygems.org"
-source :rubygems
+#source :rubygems
 gem "rack"
 # gem "rails"
 #group :assets do
