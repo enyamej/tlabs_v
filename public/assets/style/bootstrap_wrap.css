@@ -1,17 +1,18 @@
 /*!
  * Bootstrap v1.0.0
  *
- * Tlabs theme v1.0.0
+ * Copyright 2013 Gridelicious
+ * http://www.gridelicious.net
+ *
+ * Treble theme v1.0.0
  */
-
-
 .page-welcome {
     width: 100%;
     height: 100%;
     position: relative;
     overflow: hidden;
     text-align: center;
-    background: #292929 url(../images/pages/welcome/rectwhite.png) 50% 0 repeat fixed;
+    background: #292929 url(../images/pages/welcome/welcome.jpg) 50% 0 repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -99,7 +100,7 @@
     padding-bottom: 5px
 }
 
-.page-welcome #welcome-messages+p{
+.page-welcome #welcome-messages+p {
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 10px;
@@ -107,7 +108,7 @@
     letter-spacing: 2px
 }
 
-.page-welcome .social-icons{
+.page-welcome .social-icons {
     margin: 50px auto 0
 }
 
@@ -645,7 +646,7 @@
     bottom: 0;
     right: 0;
     z-index: 1;
-    opacity: 1;
+    opacity: .1;
     filter: alpha(opacity=10);
     overflow: hidden
 }
@@ -1462,7 +1463,7 @@ textarea {
         page-break-after: avoid
     }
 }
- 		
+
 html,body {
     height: 100%;
     width: 100%
@@ -8224,4 +8225,3 @@ a.label:hover,a.label:focus,a.badge:hover,a.badge:focus {
         overflow: visible!important
     }
 }
-
