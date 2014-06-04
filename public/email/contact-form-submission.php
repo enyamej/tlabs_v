@@ -6,9 +6,10 @@ if (!isset($_POST["save"]) || $_POST["save"] != "contact") {
 }  
       
 // get the posted data  
-$name = $_POST["contact_name"];  
-$email_address = $_POST["contact_email"];  
-$message = $_POST["contact_message"];  
+$name = $_POST["c_name"];  
+$email_address = $_POST["c_email"];  
+$subject = $_POST["c_subject"];  
+$message = $_POST["c_message"];  
       
 // check that a name was entered  
 if (empty ($name))  
@@ -34,7 +35,7 @@ $email_content .= "Email Address: $email_address\n";
 $email_content .= "Message:\n\n$message";  
       
 // send the email  
-mail ("mail@example.com", "New Contact Message", $email_content);  
+mail ("johne@thrivenlabs.com", "New Contact Message", $email_content);  
       
 // send the user back to the form  
 header("Location: contact-form.php?s=".urlencode("Thank you for your message.")); exit;  
