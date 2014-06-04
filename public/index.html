@@ -759,6 +759,15 @@
                     <!-- Contact form -->
                     <div class="span6">
                         <h5>Share Your Challenge</h5>
+                        <?php  
+  
+        // check for a successful form post  
+        if (isset($_GET['s'])) echo "<div class=\"alert alert-success\">".$_GET['s']."</div>";  
+  
+        // check for a form error  
+        elseif (isset($_GET['e'])) echo "<div class=\"alert alert-error\">".$_GET['e']."</div>";  
+  
+?> 
                        
                         <form method="post" action="contact-form-submission.php">
                             <input type="text" name ="c_name" id="c_name"class="span12" placeholder="Name" required="required">
