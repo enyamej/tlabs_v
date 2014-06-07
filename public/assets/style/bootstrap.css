@@ -2008,7 +2008,7 @@ h1,h2,h3 {
     line-height: 68px;
 }
 
-h1 {
+h1, h3 {
     font-size: 76px;
     font-family: 'ChunkFiveRegular','Open Sans',sans-serif;
     line-height: 76px;
@@ -2022,7 +2022,7 @@ h2 {
 
 h3 {
     font-size: 33.25px;
-    color: #000;
+    color: #bbb;
 }
 
 h4 {
