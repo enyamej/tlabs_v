@@ -740,7 +740,7 @@
             <!-- Header -->
             <header>
                 <h4 class="line-divider">Contact</h4>
-                <h3>Clarify. Cultivate. Thrive</h3>
+                <!--h3>Clarify. Cultivate. Thrive</h3>
                 <!--div class="row">
                     <div class="span8 offset2">
                         <p>
@@ -761,11 +761,11 @@
 
                     <div class="span6">
                         <h5>Share Your Challenge</h5>   
-                        <form id= "ajax-contact" method="post" action="mailer.php">
-                            <input type="text" name ="name" id="name"class="span12" placeholder="Name" required="required">
-                            <input type="email" name= "email" id="email" class="span12" placeholder="Email" required="required">
-                            <input type="subject" name= "subject" id="subject" class="span12" placeholder="Subject" required="required">
-                            <textarea rows="11" name="message" id="message" class="span12" required="required"></textarea>
+                        <form id="acontact" method="post" action="email/contact-form-submit.php">
+                            <input type="text" name ="c_name" id="c_name"class="span12" placeholder="Name" required="required">
+                            <input type="email" name= "c_email" id="c_email" class="span12" placeholder="Email" required="required">
+                            <input type="subject" name= "c_subject" id="c_subject" class="span12" placeholder="Subject" required="required">
+                            <textarea rows="11" name="c_message" id="c_message" class="span12" required="required"></textarea>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>

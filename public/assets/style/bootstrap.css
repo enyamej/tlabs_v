@@ -1988,6 +1988,9 @@ a.text-success:hover,a.text-success:focus {
 .text-center {
     text-align: center
 }
+.bx-viewport.slides.h3 {
+    color: #e74949;
+}
 
 h1,h2,h3,h4,h5,h6 {
     margin: 13.5px 0;
