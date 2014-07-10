@@ -29,10 +29,10 @@ $.ajax({
     $(formMessages).text(response);
 
     // Clear the form.
-    $('#name').val('');
-    $('#email').val('');
-    $('#subject').val('');
-    $('#message').val('');
+    $('#c_name').val('');
+    $('#c_email').val('');
+    $('#C_subject').val('');
+    $('#c_message').val('');
 })
 
 .fail(function(data) {
