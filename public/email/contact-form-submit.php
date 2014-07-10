@@ -2,7 +2,7 @@
   
 // check for form submission - if it doesn't exist then send back to contact form  
 if (!isset($_POST["save"]) || $_POST["save"] != "contact") {  
-    header("Location: email/contact-form-submit.php"); exit;  
+    header("Location: email/contact-form-submit.php").urlencode("Pleae try again."); exit;  
 }  
       
 // get the posted data  
