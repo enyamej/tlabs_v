@@ -2,7 +2,7 @@
   
 // check for form submission - if it doesn't exist then send back to contact form  
 if (!isset($_POST["save"]) || $_POST["save"] != "contact") {  
-    header("Location: email/").urlencode("Pleae try again."); exit;  
+    header("Location: email/contact-form-submit.php").urlencode("Please try again."); exit;  
 }  
       
 // get the posted data  
@@ -26,7 +26,7 @@ elseif (empty ($message))
           
 // check if an error was found - if there was, send the user back to the form  
 if (isset($error)) {  
-    header("Location: email/?e=".urlencode($error)); exit;  
+    header("Location: email/contact-form-submit.php?e=".urlencode($error)); exit;  
 }  
           
 // write the email content  
@@ -38,6 +38,6 @@ $email_content .= "Message:\n\n$message";
 mail ("johne@thrivenlabs.com", "New Contact Message", $email_content);  
       
 // send the user back to the form  
-header("Location: email/?s=".urlencode("Thank you for your message.")); exit;  
+header("Location: email/contact-form-submit.php?s=".urlencode("Thank you for your message.")); exit;  
   
 ?> 
