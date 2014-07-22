@@ -11,14 +11,13 @@ $(form).submit(function(event) {
     event.preventDefault();
 
 // Serialize the form data.
-var formData = $(form).serialize();
-});
+var form_Data = $(form).serialize();
 
 // Submit the form using AJAX.
 $.ajax({
     type: 'POST',
     url: $(form).attr('action'),
-    data: formData
+    data: form_Data
 })
 .done(function(response) {
     // Make sure that the formMessages div has the 'success' class.
@@ -48,5 +47,5 @@ $.ajax({
     }
 });
 
-
+});
 });
